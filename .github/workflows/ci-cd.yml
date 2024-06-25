@@ -1,0 +1,29 @@
+name: QMake CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install Qt
+      run: sudo apt-get update && sudo apt-get install -y qt5-qmake qtbase5-dev qt5-default
+
+    - name: Configure QMake
+      run: qmake -v && qmake CONFIG+=debug
+
+    - name: Build Project
+      run: make
+
+    - name: Run Tests
+      run: ./tests/your_test_executable  # Replace with your test executable path
