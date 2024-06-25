@@ -26,4 +26,5 @@ jobs:
       run: make
 
     - name: Run Tests
-      run: ./tests/your_test_executable  # Replace with your test executable path
+      run: ./tests/test_game.cpp # Replace with your test executable path
+
