@@ -13,18 +13,32 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Install Qt
-      run: sudo apt-get update && sudo apt-get install -y qt5-qmake qtbase5-dev qt5-default
+      - name: Install Qt
+        run: sudo apt-get update && sudo apt-get install -y qt5-qmake qtbase5-dev qt5-default
 
-    - name: Configure QMake
-      run: qmake -v && qmake CONFIG+=debug
+      - name: Configure QMake
+        run: qmake -v && qmake CONFIG+=debug
 
-    - name: Build Project
-      run: make
+      - name: Build Project
+        run: make
 
-    - name: Run Tests
-      run: ./tests/test_game.cpp # Replace with your test executable path
+      - name: Run Tests
+        run: ./tests/test_game.cpp  # Adjust path if necessary
 
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./docs  # Replace with your build output directory
+          publish_branch: gh-pages  # Replace with your deployment branch
