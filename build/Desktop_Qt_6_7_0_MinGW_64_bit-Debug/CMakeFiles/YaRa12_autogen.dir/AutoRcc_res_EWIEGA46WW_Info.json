@@ -1,0 +1,26 @@
+{
+	"BUILD_DIR" : "C:/Users/omar khaled/Downloads/YaRa12/YaRa12/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/YaRa12_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/omar khaled/Downloads/YaRa12/YaRa12/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/omar khaled/Downloads/YaRa12/YaRa12/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/omar khaled/Downloads/YaRa12/YaRa12",
+	"CMAKE_SOURCE_DIR" : "C:/Users/omar khaled/Downloads/YaRa12/YaRa12",
+	"INCLUDE_DIR" : "C:/Users/omar khaled/Downloads/YaRa12/YaRa12/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/YaRa12_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/omar khaled/Downloads/YaRa12/YaRa12/img/user.jpeg",
+		"C:/Users/omar khaled/Downloads/YaRa12/YaRa12/sounds/080047_lose_funny_retro_video-game-80925.wav",
+		"C:/Users/omar khaled/Downloads/YaRa12/YaRa12/sounds/background_music.wav",
+		"C:/Users/omar khaled/Downloads/YaRa12/YaRa12/sounds/game_draw.wav",
+		"C:/Users/omar khaled/Downloads/YaRa12/YaRa12/sounds/winner.wav"
+	],
+	"LOCK_FILE" : "C:/Users/omar khaled/Downloads/YaRa12/YaRa12/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/YaRa12_autogen.dir/AutoRcc_res_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "res" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_res.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.7.0/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/omar khaled/Downloads/YaRa12/YaRa12/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/CMakeFiles/YaRa12_autogen.dir/AutoRcc_res_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/omar khaled/Downloads/YaRa12/YaRa12/res.qrc",
+	"VERBOSITY" : 0
+}
